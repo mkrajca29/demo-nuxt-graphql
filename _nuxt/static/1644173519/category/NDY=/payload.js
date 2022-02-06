@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/category/NDY=", (function(a){return {data:[{page:a}],fetch:{},mutations:a}}(void 0)));
