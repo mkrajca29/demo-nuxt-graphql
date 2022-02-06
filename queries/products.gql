@@ -1,0 +1,25 @@
+query ($filters: ProductAttributeFilterInput, $pageSize: Int, $currentPage: Int) {
+  products(filter: $filters, pageSize: $pageSize, currentPage: $currentPage)
+  {
+    items {
+        name
+        id
+        stock_status
+        price_range {
+        minimum_price {
+          final_price {
+            value
+            currency
+            }
+          }
+        }
+        categories {
+            name
+        }
+        media_gallery {
+            url
+      }
+    }
+    total_count
+  }
+}

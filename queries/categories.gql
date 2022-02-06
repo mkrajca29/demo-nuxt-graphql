@@ -1,0 +1,11 @@
+query ($filters: CategoryFilterInput) {
+    categories(filters: $filters, pageSize: 30, currentPage: 1) {
+        total_count
+        items {
+            id
+            uid
+            name
+        }
+    }
+},
+
